@@ -1,6 +1,7 @@
 import _ from 'lodash'
+import { squared, NAME } from './utils'
 
-function component() {
+const component = () => {
   const element = document.createElement('div')
   const array = [ 'Hello', 'webpack', '!!' ]
   element.innerHTML = _.join(array, ' ')
